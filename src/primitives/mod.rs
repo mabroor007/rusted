@@ -29,4 +29,11 @@ pub fn primitive_types() {
     // I am not a fan of this approach i don't
     // find much use of this right now but i'll
     // see how it goes.
+
+    // some useful tricks
+    let bin = 0b01101;
+    println!("binary = {}", bin);
+
+    let byte_litteral = b'A';
+    println!("byte_litteral = {}", byte_litteral);
 }
