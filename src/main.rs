@@ -1,6 +1,6 @@
-mod docs;
+mod derive;
 
 fn main() {
-    let result = docs::sum(6, 9);
-    println!("{}", result)
+    let mabroor = derive::Person::new("Mabroor Ahmad", 20);
+    mabroor.log()
 }
