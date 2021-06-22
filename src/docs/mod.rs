@@ -14,3 +14,6 @@
 pub fn sum(a: i32, b: i32) -> i32 {
     a + b
 }
+// My-take
+//   i think builtin docs are really really great for large projects
+//   and we must doc our code properly

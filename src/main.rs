@@ -1,6 +1,5 @@
-mod derive;
+mod primitives;
 
 fn main() {
-    let mabroor = derive::Person::new("Mabroor Ahmad", 20);
-    mabroor.log()
+    primitives::primitive_types();
 }
