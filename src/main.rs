@@ -1,5 +1,5 @@
-mod primitives;
+mod arithmatics;
 
 fn main() {
-    primitives::primitive_types();
+    arithmatics::sample();
 }
