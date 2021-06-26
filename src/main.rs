@@ -1,5 +1,5 @@
-mod arithmatics;
+mod arrays;
 
 fn main() {
-    arithmatics::sample();
+    arrays::rust_arrays();
 }
