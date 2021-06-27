@@ -21,5 +21,5 @@ pub fn rust_arrays() {
 }
 
 fn borrow_array_slice(slice: &[i32]) {
-    println!("{:?} is a slice of length {}", slice, slice.len())
+    println!("{:?} is a slice of length {}", slice, slice.len());
 }

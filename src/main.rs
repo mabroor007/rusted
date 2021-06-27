@@ -1,5 +1,5 @@
-mod arrays;
+mod structs;
 
 fn main() {
-    arrays::rust_arrays();
+    structs::run();
 }
