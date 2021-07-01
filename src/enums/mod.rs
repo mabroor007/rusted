@@ -77,6 +77,17 @@ impl Gun {
     }
 }
 
+#[derive(Debug)]
+enum Name {
+    Martha,
+    Julia,
+    Maria,
+    // you can also have tuple structs in enums
+    Custom(String),
+    // or custom struct types
+    JointName { first: String, last: String },
+}
+
 pub fn run() {
     let mut akm = Gun::new(
         "AKM".to_string(),
@@ -101,4 +112,14 @@ pub fn run() {
     //   but it works for GunKind as well
     sniper.log();
     ar.log();
+
+    // custom variants in enums
+    let custom_name: Name = Name::Custom("Jennifer".to_string());
+    let joint_name: Name = Name::JointName {
+        first: "Mabroor".to_string(),
+        last: "Ahmad".to_string(),
+    };
+
+    println!("custom name {:?}", custom_name);
+    println!("joint name {:?}", joint_name);
 }
