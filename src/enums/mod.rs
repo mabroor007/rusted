@@ -11,6 +11,12 @@ enum Scope {
     Holographic,
 }
 
+// explicit values for enums
+enum Binary {
+    Zero = 0,
+    One = 1,
+}
+
 #[allow(dead_code)]
 #[derive(Debug)]
 enum Mag {
@@ -122,4 +128,7 @@ pub fn run() {
 
     println!("custom name {:?}", custom_name);
     println!("joint name {:?}", joint_name);
+
+    // enums can be casted into integers
+    println!("{}", Binary::One as i32);
 }
