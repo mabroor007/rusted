@@ -1,5 +1,7 @@
-mod k_use;
+mod ds;
 
 fn main() {
-    k_use::run();
+    let list = ds::LinkedList::<u8>::new();
+
+    println!("{:?}", list);
 }
