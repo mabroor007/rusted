@@ -1,7 +1,7 @@
-mod ds;
+mod vars;
 
 fn main() {
-    let list = ds::LinkedList::<u8>::new();
-
-    println!("{:?}", list);
+    vars::log_static();
+    vars::run();
+    println!("{}", vars::MY_AGE);
 }
