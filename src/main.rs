@@ -1,5 +1,5 @@
-mod loops;
+mod comp;
 
 fn main() {
-    loops::run();
+    comp::run();
 }
