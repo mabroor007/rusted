@@ -23,4 +23,20 @@ pub fn run() {
         // this is for default case if no pattern matches
         //_ => println!("You bulling me!"),
     }
+
+
+    //you can do much more with pointers
+        //you can destructure element which is being compared
+            //this can be tuple, struct, enum or even pointers
+
+    // you can put guards in match statements which do a specific condition check before executing
+    // a case
+
+    let name = ("mabroor","ahmad");
+
+    match name {
+        // this if acts as a guard 
+       (x,_) if x == "mabroor" => println!("Oh hai mabroor"),
+       _ => println!("I don't care who you are")
+    }
 }
