@@ -1,5 +1,5 @@
-mod comp;
+mod tcp;
 
 fn main() {
-    comp::run();
+    tcp::run(4000)
 }
