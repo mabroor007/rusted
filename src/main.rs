@@ -1,5 +1,5 @@
-mod tcp;
+mod guessing_game;
 
 fn main() {
-    tcp::run(4000)
+    guessing_game::init();
 }
