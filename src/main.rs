@@ -1,5 +1,6 @@
 mod guessing_game;
+mod tempmoji;
 
 fn main() {
-    guessing_game::init();
+    tempmoji::run();
 }
