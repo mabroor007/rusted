@@ -1,6 +1,6 @@
-mod guessing_game;
-mod tempmoji;
+mod fibonaccie_no;
 
 fn main() {
-    tempmoji::run();
+    let first_ten_fib_numbers = fibonaccie_no::upto(10);
+    println!("{:?}", first_ten_fib_numbers);
 }
