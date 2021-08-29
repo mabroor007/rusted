@@ -1,6 +1,5 @@
-mod fibonaccie_no;
+mod ownership;
 
 fn main() {
-    let first_ten_fib_numbers = fibonaccie_no::upto(10);
-    println!("{:?}", first_ten_fib_numbers);
+    ownership::run();
 }
