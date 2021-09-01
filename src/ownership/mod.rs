@@ -14,6 +14,10 @@ pub fn takes_ownership_of_string_then_gives_back(s: String) -> String {
     s
 }
 
+pub fn borrows_a_string_and_returns_size(s: &String) -> i32 {
+    s.len() as i32
+}
+
 pub fn run() {
     let mut some_string = gives_ownership_of_string();
 
@@ -23,8 +27,19 @@ pub fn run() {
     // redeclare with same name results in shadowing
     let some_string = takes_ownership_of_string_then_gives_back(some_string);
 
+    // this takes the ownership of a clone not original performance!
+    takes_ownership_of_string(some_string.clone());
+
     takes_ownership_of_string(some_string);
 
     // throws error because ownership was given away and some_string is not in scope
     // some_string.push_str(" and he is an engineer");
+
+    let mut new_string = String::from("Wickshot");
+
+    let size = borrows_a_string_and_returns_size(&new_string); // this function borrowed new_string from this scope
+
+    new_string.push_str("how");
+
+    println!("size of '{}' is = {}", new_string, size);
 }
